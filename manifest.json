@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Studocu-Ads",
+  "version": "1.0.0",
+  "description": "Oculta el banner de vista previa/premium en studocu.com",
+  "content_scripts": [
+    {
+      "matches": ["https://www.studocu.com/*"],
+      "css": ["hide.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
